@@ -1,0 +1,226 @@
+body {
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-image: url(../../imgs/background4.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    margin: 150px auto;
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    box-shadow: -15px -10px 50px 1px #2e2d2d;
+}
+
+.gradient-box-top {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 55px;
+    background: rgb(230, 230, 230);
+    background: -moz-linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6e6e6", endColorstr="#ffffff", GradientType=1);
+}
+
+.gradient-box-end {
+    width: 100%;
+    height: 30px;
+    background: rgb(237, 237, 237);
+    background: -moz-linear-gradient(240deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(240deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(240deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed", endColorstr="#ffffff", GradientType=1);
+}
+
+/* -- header -- */
+
+header {
+    padding-bottom: 5px;
+}
+
+header>h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    letter-spacing: 5px;
+}
+
+header>h3 {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/* == header == */
+
+.content {
+    margin-top: 35px;
+    display: flex;
+    height: calc(100% - 230px);
+}
+
+.vertical-line {
+    height: 100%;
+    width: 3px;
+    background-color: black;
+    float: right;
+    background: rgb(237, 237, 237);
+    background: -moz-linear-gradient(240deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0.8645833333333334) 30%, rgba(236, 236, 236, 1) 61%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-linear-gradient(240deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0.8645833333333334) 30%, rgba(236, 236, 236, 1) 61%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(240deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0.8645833333333334) 30%, rgba(236, 236, 236, 1) 61%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed", endColorstr="#ededed", GradientType=1);
+}
+
+.left-side {
+    width: 35%;
+}
+
+.right-side {
+    width: 65%;
+}
+
+/* -- section -- */
+
+.left-side>section {
+    /* plus width of .vertical-line */
+    margin-right: calc(20px + 3px);
+    margin-bottom: 40px;
+}
+
+.right-side>section {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+/* == section == */
+
+/* -- section -> h3 -- */
+
+.left-side>section>h3 {
+    text-align: right;
+    font-size: 14px;
+    padding-left: 40px;
+    margin-right: 17.5px;
+    margin-bottom: 5px;
+}
+
+.right-side>section>h3 {
+    text-align: left;
+    font-size: 14px;
+    padding-right: 40px;
+    margin-bottom: 5px;
+}
+
+/* == section -> h3 == */
+
+/* -- section -> p -- */
+
+.left-side>section>p {
+    font-size: 12px;
+    text-align: right;
+    margin-right: 17.5px;
+    padding-left: 60px;
+    margin-top: 2px;
+}
+
+.right-side>section>p {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 12.5px;
+    padding-right: 60px;
+    margin-top: 2px;
+}
+
+.contact-section>p, .skills-section>p {
+    margin-top: 15px !important;
+}
+
+/* == section -> p == */
+
+/* -- section -> name -- */
+
+.section-name {
+    width: 100%;
+    height: 22px;
+    font-size: 16px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.left-side>section>.section-name {
+    background: rgb(237, 237, 237);
+    background: -moz-linear-gradient(247deg, rgba(237, 237, 237, 0.8393732492997199) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(247deg, rgba(237, 237, 237, 0.8393732492997199) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(247deg, rgba(237, 237, 237, 0.8393732492997199) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed", endColorstr="#ffffff", GradientType=1);
+}
+
+.right-side>section>.section-name {
+    background: rgb(237, 237, 237);
+    background: -moz-linear-gradient(127deg, rgba(237, 237, 237, 0.8393732492997199) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(127deg, rgba(237, 237, 237, 0.8393732492997199) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(127deg, rgba(237, 237, 237, 0.8393732492997199) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed", endColorstr="#ffffff", GradientType=1);
+}
+
+/* == section -> name == */
+
+/* -- section -> name -> p -- */
+
+.section-name>p {
+    font-size: inherit;
+    letter-spacing: 7px;
+    font-family: 'Lora', serif;
+    font-weight: 100;
+}
+
+.left-side>section>.section-name>p {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.right-side>section>.section-name>p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* == section -> name -> p == */
+
+.contact_icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    float: left;
+    margin-left: 4px;
+    position: relative;
+    /* bottom: 3px; */
+}
+
+.phone_icon {
+    left: 24px;
+    bottom: 3px;
+}
+
+.mail_icon {
+    top: 22px;
+}
+
+.location_icon {
+    top: 50px;
+    right: 24px;
+}
+
+
+.instagram_icon {
+    top: 88px;
+    right: 48px;
+}
+
+.contact-section>p>a{
+    color: black;
+}
