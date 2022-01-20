@@ -191,36 +191,46 @@ header>h3 {
 
 /* == section -> name -> p == */
 
-.contact_icon {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    float: left;
-    margin-left: 4px;
-    position: relative;
-    /* bottom: 3px; */
-}
-
-.phone_icon {
-    left: 24px;
-    bottom: 3px;
-}
-
-.mail_icon {
-    top: 22px;
-}
-
-.location_icon {
-    top: 50px;
-    right: 24px;
-}
-
-
-.instagram_icon {
-    top: 88px;
-    right: 48px;
-}
-
 .contact-section>p>a{
     color: black;
+} 
+
+/* -- contact icons -- */
+
+.phone-contact, .mail-contact, .location-contact,.instagram-contact{
+    position: relative;
+    right: 20px;
 }
+
+.phone-contact::after, .mail-contact::after, .location-contact::after, .instagram-contact::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;   
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -27px;
+    position: absolute;
+}
+
+.phone-contact::after{
+    background-image: url("../../imgs/phone_icon.png");
+    bottom: -4px;
+}
+
+.mail-contact::after{
+    background-image: url("../../imgs/mail_icon.png");
+    bottom: -4px;
+}
+
+.location-contact::after{
+    background-image: url("../../imgs/location_icon.png");
+    bottom: 2px;
+}
+
+.instagram-contact::after{
+    background-image: url("../../imgs/instagram_icon.png");
+    bottom: -4px;
+}
+
+/* == contact icons == */
