@@ -12,7 +12,7 @@ main {
     width: 210mm;
     height: 297mm;
     background-color: white;
-    box-shadow: -15px -10px 50px 1px #2e2d2d;
+    box-shadow: 0px -10px 62px 11px #2e2d2d;
 }
 
 .gradient-box-top {
@@ -35,28 +35,6 @@ main {
     background: linear-gradient(240deg, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 0.8645833333333334) 49%, rgba(255, 255, 255, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed", endColorstr="#ffffff", GradientType=1);
 }
-
-/* -- header -- */
-
-header {
-    padding-bottom: 5px;
-}
-
-header>h1 {
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Lora', serif;
-    letter-spacing: 5px;
-}
-
-header>h3 {
-    margin-top: 20px;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: 4px;
-}
-
-/* == header == */
 
 .content {
     margin-top: 35px;
@@ -84,24 +62,50 @@ header>h3 {
     width: 65%;
 }
 
+/* -- header -- */
+
+header {
+    padding-bottom: 5px;
+}
+
+header>h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    letter-spacing: 5px;
+}
+
+header>h3 {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/* == header == */
+
 /* -- section -- */
 
 .left-side>section {
     /* plus width of .vertical-line */
     margin-right: calc(20px + 3px);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .right-side>section {
     margin-left: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /* == section == */
 
-/* -- section -> h3 -- */
+/* -- .institution-block -- */
 
-.left-side>section>h3 {
+.institution-block {
+    margin-bottom: 40px;
+}
+
+.left-side>section>.institution-block>h3 {
     text-align: right;
     font-size: 14px;
     padding-left: 40px;
@@ -109,14 +113,50 @@ header>h3 {
     margin-bottom: 5px;
 }
 
-.right-side>section>h3 {
+.right-side>section>.institution-block>h3 {
     text-align: left;
     font-size: 14px;
     padding-right: 40px;
+    margin-left: 17.5px;
     margin-bottom: 5px;
 }
 
-/* == section -> h3 == */
+.left-side>section>.institution-block>p {
+    font-size: 12px;
+    text-align: right;
+    margin-right: 17.5px;
+    padding-left: 60px;
+    margin-top: 2px;
+}
+
+.right-side>section>.institution-block>p {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 17.5px;
+    padding-right: 60px;
+    margin-top: 2px;
+}
+
+.right-side>section>.institution-block>ul {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 50px;
+    padding-right: 60px;
+    margin-top: 6px;
+    list-style-type: disc;
+}
+
+.right-side>section>.institution-block>ul>li {
+    margin-top: 3px;
+}
+
+.right-side>section>.institution-block>ul>li>span {
+    left: 10px;
+    position: relative;
+}
+
+
+/* == .institution-block == */
 
 /* -- section -> p -- */
 
@@ -131,7 +171,7 @@ header>h3 {
 .right-side>section>p {
     font-size: 12px;
     text-align: left;
-    margin-left: 12.5px;
+    margin-left: 17.5px;
     padding-right: 60px;
     margin-top: 2px;
 }
@@ -191,44 +231,48 @@ header>h3 {
 
 /* == section -> name -> p == */
 
-.contact-section>p>a{
+.contact-section>p>a {
     color: black;
-} 
+}
 
-/* -- contact icons -- */
+/* -- contact icons and links-- */
 
-.phone-contact, .mail-contact, .location-contact,.instagram-contact{
+.contact-section>p>a {
+    color: black;
+}
+
+.phone-contact, .mail-contact, .location-contact, .instagram-contact {
     position: relative;
     right: 20px;
 }
 
-.phone-contact::after, .mail-contact::after, .location-contact::after, .instagram-contact::after{
+.phone-contact::after, .mail-contact::after, .location-contact::after, .instagram-contact::after {
     content: "";
     width: 20px;
     height: 20px;
-    margin-left: 5px;   
+    margin-left: 5px;
     background-size: contain;
     background-repeat: no-repeat;
     right: -27px;
     position: absolute;
 }
 
-.phone-contact::after{
+.phone-contact::after {
     background-image: url("../../imgs/phone_icon.png");
     bottom: -4px;
 }
 
-.mail-contact::after{
+.mail-contact::after {
     background-image: url("../../imgs/mail_icon.png");
     bottom: -4px;
 }
 
-.location-contact::after{
+.location-contact::after {
     background-image: url("../../imgs/location_icon.png");
-    bottom: 2px;
+    bottom: 3px;
 }
 
-.instagram-contact::after{
+.instagram-contact::after {
     background-image: url("../../imgs/instagram_icon.png");
     bottom: -4px;
 }
