@@ -231,50 +231,29 @@ header>h3 {
 
 /* == section -> name -> p == */
 
-.contact-section>p>a {
-    color: black;
-}
-
 /* -- contact icons and links-- */
 
 .contact-section>p>a {
     color: black;
 }
 
-.phone-contact, .mail-contact, .location-contact, .instagram-contact {
-    position: relative;
-    right: 20px;
-}
-
-.phone-contact::after, .mail-contact::after, .location-contact::after, .instagram-contact::after {
-    content: "";
+.contact-section>p>img, .contact-section>p>a>img {
     width: 20px;
     height: 20px;
     margin-left: 5px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    right: -27px;
-    position: absolute;
+    position: relative;
+    bottom: 4px;
 }
 
-.phone-contact::after {
-    background-image: url("../../imgs/phone_icon.png");
-    bottom: -4px;
+.contact-section>p {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
 }
 
-.mail-contact::after {
-    background-image: url("../../imgs/mail_icon.png");
-    bottom: -4px;
+#two-lines-icon {
+    bottom: -1px;
 }
 
-.location-contact::after {
-    background-image: url("../../imgs/location_icon.png");
-    bottom: 3px;
-}
+/* == contact icons and links== */
 
-.instagram-contact::after {
-    background-image: url("../../imgs/instagram_icon.png");
-    bottom: -4px;
-}
-
-/* == contact icons == */
