@@ -291,6 +291,14 @@ header>h3 {
     margin-top: 15px;
 }
 
+#greater-p-top-margin.contact-section>p:first-of-type {
+    margin-top: 0;
+}
+
+#greater-p-top-margin.skills-section>p:first-of-type {
+    margin-top: 0;
+}
+
 
 /* -- media -- */
 
