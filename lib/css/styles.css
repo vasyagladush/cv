@@ -377,6 +377,10 @@ header>h3 {
         justify-content: flex-start;
         flex: 100%;
     }
+    .skills-section>p {
+        justify-content: flex-start;
+        flex: 100%;
+    }
 }
 
 
