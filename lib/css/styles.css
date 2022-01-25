@@ -282,12 +282,12 @@ header>h3 {
 
 /* == contact icons and links == */
 
-.contact-section>p:nth-of-type(n) {
+#greater-p-top-margin.contact-section>p {
     margin-right: 10px;
     margin-top: 15px;
 }
 
-.skills-section>p:nth-of-type(n) {
+#greater-p-top-margin.skills-section>p {
     margin-top: 15px;
 }
 
