@@ -9,8 +9,8 @@ body {
 
 main {
     margin: 150px auto;
-    width: 210mm;
-    height: 297mm;
+    max-width: 210mm;
+    min-height: 297mm;
     background-color: white;
     box-shadow: 0px -10px 62px 11px #2e2d2d;
 }
@@ -39,7 +39,8 @@ main {
 .content {
     margin-top: 35px;
     display: flex;
-    height: calc(100% - 230px);
+    flex-wrap: wrap;
+    min-height: 297mm;
 }
 
 .vertical-line {
@@ -55,11 +56,11 @@ main {
 }
 
 .left-side {
-    width: 35%;
+    width: calc(210mm*0.35);
 }
 
 .right-side {
-    width: 65%;
+    width: calc(210mm*0.65);
 }
 
 
@@ -93,11 +94,17 @@ header>h3 {
     /* plus width of .vertical-line */
     margin-right: calc(20px + 3px);
     margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .right-side>section {
     margin-left: 20px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 
@@ -108,6 +115,11 @@ header>h3 {
 
 .institution-block {
     margin-bottom: 40px;
+}
+
+.left-side>section>.institution-block:last-of-type,
+.right-side>section>.institution-block:last-of-type {
+    margin-bottom: 0;
 }
 
 .left-side>section>.institution-block>h3 {
@@ -191,9 +203,10 @@ header>h3 {
 
 .section-name {
     width: 100%;
-    height: 22px;
+    height: fit-content;
     font-size: 16px;
     padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
@@ -261,15 +274,100 @@ header>h3 {
     align-content: center;
 }
 
-#two-lines-icon {
+.two-lines-icon {
     bottom: -1px;
     margin-bottom: 8px;
 }
 
 
-/* == contact icons and links== */
+/* == contact icons and links == */
 
-#greater-top-margin.contact-section>p,
-#greater-top-margin.skills-section>p {
+.contact-section>p:nth-of-type(n) {
+    margin-right: 10px;
     margin-top: 15px;
 }
+
+.skills-section>p:nth-of-type(n) {
+    margin-top: 15px;
+}
+
+
+/* -- media -- */
+
+@media (max-width: 794px) {
+    .vertical-line {
+        display: none;
+    }
+    .left-side {
+        width: 80%;
+        margin: auto;
+    }
+    .left-side>section {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: flex-start;
+    }
+    .left-side>section>.institution-block>h3 {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 40px;
+        margin-left: 17.5px;
+        margin-right: 0;
+    }
+    .left-side>section>.institution-block>p {
+        text-align: left;
+        margin-left: 17.5px;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 60px;
+    }
+    .left-side>section>.institution-block>ul {
+        text-align: left;
+        margin-left: 50px;
+        margin-right: 0;
+        padding-right: 60px;
+        padding-left: 0;
+        list-style-type: disc;
+    }
+    .left-side>section>p {
+        text-align: left;
+        margin-left: 17.5px;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 60px;
+    }
+    .left-side>section>.section-name {
+        background: rgb(230, 230, 230);
+        background: -moz-linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(230, 230, 230, 1) 100%);
+        background: -webkit-linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(230, 230, 230, 1) 100%);
+        background: linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(230, 230, 230, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#e6e6e6", endColorstr="#ffffff", GradientType=1);
+    }
+    .left-side>section>.section-name>p {
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    .right-side {
+        width: 80%;
+        margin: auto;
+    }
+    .right-side>section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .right-side>section>.section-name {
+        background: rgb(230, 230, 230);
+        background: -moz-linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(230, 230, 230, 1) 100%);
+        background: -webkit-linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(230, 230, 230, 1) 100%);
+        background: linear-gradient(122deg, rgba(230, 230, 230, 1) 0%, rgba(237, 237, 237, 1) 49%, rgba(230, 230, 230, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#e6e6e6", endColorstr="#ffffff", GradientType=1);
+    }
+    .contact-section>p {
+        flex: 25%;
+        justify-content: flex-start;
+    }
+}
+
+
+/* == media == */
