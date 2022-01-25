@@ -300,6 +300,9 @@ header>h3 {
 /* -- media -- */
 
 @media (max-width: 794px) {
+    main {
+        margin: 0 auto;
+    }
     .vertical-line {
         display: none;
     }
@@ -310,6 +313,7 @@ header>h3 {
     .left-side>section {
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 40px;
         justify-content: flex-start;
     }
     .left-side>section>.institution-block>h3 {
@@ -360,6 +364,7 @@ header>h3 {
     .right-side>section {
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 40px;
     }
     .right-side>section>.section-name {
         background: rgb(230, 230, 230);
