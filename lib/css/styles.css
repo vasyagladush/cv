@@ -374,8 +374,8 @@ header>h3 {
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#e6e6e6", endColorstr="#ffffff", GradientType=1);
     }
     .contact-section>p {
-        flex: 25%;
         justify-content: flex-start;
+        flex: 100%;
     }
 }
 
