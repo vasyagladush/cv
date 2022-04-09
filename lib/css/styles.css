@@ -352,7 +352,7 @@ header>h3 {
     .left-side>section>.institution-block>h3 {
         text-align: left;
         padding-left: 0;
-        padding-right: 40px;
+        padding-right: 17.5px;
         margin-left: 17.5px;
         margin-right: 0;
     }
@@ -361,13 +361,13 @@ header>h3 {
         margin-left: 17.5px;
         margin-right: 0;
         padding-left: 0;
-        padding-right: 60px;
+        padding-right: 17.5px;
     }
     .left-side>section>.institution-block>ul {
         text-align: left;
         margin-left: 50px;
         margin-right: 0;
-        padding-right: 60px;
+        padding-right: 17.5px;
         padding-left: 0;
         list-style-type: disc;
     }
@@ -376,7 +376,7 @@ header>h3 {
         margin-left: 17.5px;
         margin-right: 0;
         padding-left: 0;
-        padding-right: 60px;
+        padding-right: 17.5px;
     }
     .left-side>section>.section-name {
         background: rgb(230, 230, 230);
