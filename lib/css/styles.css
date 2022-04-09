@@ -362,6 +362,13 @@ header>h3 {
     main {
         margin: 0 auto;
     }
+    .profile-picture {
+        float: left;
+        border: 2px solid black;
+        margin-left: 5px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
     .vertical-line {
         display: none;
     }
