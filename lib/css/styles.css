@@ -19,6 +19,10 @@ a {
     color: black;
 }
 
+a:visited {
+    color: black;
+}
+
 
 /* For PDF converting */
 
