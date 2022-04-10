@@ -56,7 +56,7 @@ main {
     width: calc(35mm);
     height: calc(35mm * 1.152);
     float: right;
-    border: 2px solid black;
+    border: 1.5px solid rgb(173, 170, 170);
     margin-right: 5px;
     margin-left: 60px;
     margin-bottom: 15px;
